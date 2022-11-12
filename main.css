@@ -173,6 +173,13 @@ header a {
   height: 30px;
 }
 
+.about {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 115px 0;
+}
+
 .about__image {
   width: 500px;
 }
