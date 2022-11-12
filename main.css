@@ -172,3 +172,12 @@ header a {
 .header__logo {
   height: 30px;
 }
+
+.about__image {
+  width: 500px;
+}
+
+.about__sun-image {
+  width: 100px;
+  height: 100px;
+}
