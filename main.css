@@ -96,3 +96,14 @@
          url('../fonts/raleway-v28-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/raleway-v28-latin_cyrillic-900.svg#Raleway') format('svg'); /* Legacy iOS */
   }
+
+  body {
+     font-family: 'Raleway', sans-serif;
+     color: #213053;
+   }
+
+   header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
