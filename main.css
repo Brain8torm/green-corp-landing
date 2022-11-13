@@ -154,6 +154,12 @@ button {
   cursor: pointer;
   box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
   padding: 15px;
+  transition: background-color 0.3s ease-in;
+}
+
+button:hover {
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
 }
 
 header {
