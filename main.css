@@ -197,6 +197,7 @@ header a {
   width: 100px;
   height: 100px;
   animation: rotation 10.0s linear infinite;
+  position: absolute;
 }
 
 .about h1 {
