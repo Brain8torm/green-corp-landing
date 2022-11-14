@@ -296,3 +296,22 @@ footer{
   text-align: center;
   opacity: 0.5;
 }
+
+.footer__group {
+  margin-right: 80px;
+}
+
+.footer__group h3 {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links a {
+  margin-bottom: 15px;
+}
