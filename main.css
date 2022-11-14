@@ -196,6 +196,7 @@ header a {
 .about__sun-image {
   width: 100px;
   height: 100px;
+  animation: rotation 10.0s linear infinite;
 }
 
 .about h1 {
@@ -314,4 +315,12 @@ footer{
 
 .footer__links a {
   margin-bottom: 15px;
+}
+
+
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
 }
