@@ -435,6 +435,11 @@ footer {
   color: #22a030;
 }
 
+.features__border {
+  margin: 50px 0;
+  border: 1px solid #E6EAF4;
+}
+
 @media (max-width: 720px) {
   .features {
     padding: 50px 10px;
