@@ -391,6 +391,63 @@ footer{
   }
 }
 
+.features {
+  background-color: #fff;
+  padding: 115px 60px;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  padding: 35px 40px 25px 40px;
+  border: 1px solid #D9E4E6;
+  border-radius: 5px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: .8;
+}
+
+.card .card__logo {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #eaeff9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:nth-child(1) span {
+  color: #ffb406;
+}
+
+.card:nth-child(2) span {
+  color: #ad1714;
+}
+
+.card:nth-child(3) span {
+  color: #22a030;
+}
+
+@media (max-width: 720px) {
+  .features {
+    padding: 50px 10px;
+  }
+ .cards {
+  grid-template-columns: auto;
+ }
+}
+
+
 @keyframes rotation {
   100% {
     transform: rotate(360deg);
