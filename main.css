@@ -598,6 +598,17 @@ footer {
   }
 }
 
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.about {
+  position: relative;
+}
+
 @keyframes rotation {
   100% {
     transform: rotate(360deg);
