@@ -82,3 +82,12 @@ document.querySelector('.header__controls button')
       behavior: 'smooth'
     })
   });
+
+  document.querySelector('.about button')
+  .addEventListener('click', (e) => {
+    e.preventDefault();
+
+    document.querySelector('.features').scrollIntoView({
+      behavior: 'smooth'
+    })
+  });
