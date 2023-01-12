@@ -22,4 +22,26 @@ function initIncreaseNumberAnimation() {
 }
 initIncreaseNumberAnimation();
 
+const budgetEl = document.querySelector('#budget');
 
+budgetEl.addEventListener('change', (e) => {
+
+  if (e.target.value === 'other') {
+    const formContainer = document.createElement('div');
+    const formInputOther = document.createElement('input');
+
+    formContainer.classList.add(...['form__group', 'form__input-other']);
+    formInputOther.setAttribute('placeholder', 'Введите ваш вариант');
+    formInputOther.setAttribute('type', 'text');
+    formContainer.append(formInputOther);
+    
+    budgetEl.closest('.form__group').after(formContainer);
+  }
+
+  if (e.target.value !== 'other') {
+    const formInputOther = document.querySelector('.form__input-other');
+    if (formInputOther) {
+      document.querySelector('.form form').removeChild(formInputOther);
+    }
+  }
+});
