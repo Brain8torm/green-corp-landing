@@ -64,6 +64,7 @@ function updateScroll() {
  
 window.addEventListener('scroll', updateScroll);
 
+/*
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -91,3 +92,30 @@ document.querySelector('.header__controls button')
       behavior: 'smooth'
     })
   });
+  */
+
+const scrollTo = (from, to) => {
+
+  console.log(from, to);
+  let fromEls = document.querySelectorAll(from);
+  
+  fromEls.forEach((fromEl) => {
+    fromEl.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      let toEl = document.querySelector(to);
+      if (to === 'id') {
+        toEl = document.querySelector(e.target.getAttribute('href'));
+      }
+      
+      toEl.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+};
+
+scrollTo('a[href^="#"]', 'id');
+scrollTo('.promo__button-wrap button', '.form');
+scrollTo('.header__controls button', '.form');
+scrollTo('.about button', '.features')
