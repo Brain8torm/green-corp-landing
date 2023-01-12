@@ -47,6 +47,8 @@ budgetEl.addEventListener('change', (e) => {
 });
 
 function updateScroll() {
+  let animationInited = false;
+
   if (window.scrollY > 0) {
     document.querySelector('header').classList.add('header__scrolled');
   } else {
@@ -96,7 +98,6 @@ document.querySelector('.header__controls button')
 
 const scrollTo = (from, to) => {
 
-  console.log(from, to);
   let fromEls = document.querySelectorAll(from);
   
   fromEls.forEach((fromEl) => {
