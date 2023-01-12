@@ -608,7 +608,24 @@ footer {
 
 .about {
   position: relative;
+  padding-top: 200px;
+  
 }
+
+header {
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: background-color, box-shadow 250ms ease;
+}
+
+.header__scrolled {
+  background-color: #fff;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+}
+
+
 
 @keyframes rotation {
   100% {
