@@ -63,3 +63,22 @@ function updateScroll() {
 }
  
 window.addEventListener('scroll', updateScroll);
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+document.querySelector('.header__controls button')
+  .addEventListener('click', (e) => {
+    e.preventDefault();
+
+    document.querySelector('.form').scrollIntoView({
+      behavior: 'smooth'
+    })
+  });
